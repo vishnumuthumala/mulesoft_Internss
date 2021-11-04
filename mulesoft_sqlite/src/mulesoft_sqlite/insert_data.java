@@ -18,19 +18,19 @@ public class insert_data {
 				
 				Scanner sc=new Scanner(System.in);
 				 System.out.println("Enter movie name:");
-				 String  mov_name=sc.next();
+				 String  m_name=sc.next();
 				 System.out.println("Enter actor name:");
-				 String  actor=sc.next();
+				 String  ac_name=sc.next();
 				 System.out.println("Enter actress name:");
-				 String  actress=sc.next();
+				 String  acs_name=sc.next();
 				 System.out.println("Enter year:");
-				 int year=sc.nextInt();
+				 int yr_number=sc.nextInt();
 				 
 				PreparedStatement pt=conn.prepareStatement("insert into movies values(?,?,?,?)");
-				 pt.setString(1, mov_name);
-				 pt.setString(2, actor);
-				 pt.setString(3, actress);
-				 pt.setInt(4, year);
+				 pt.setString(1, m_name);
+				 pt.setString(2, ac_name);
+				 pt.setString(3, acs_name);
+				 pt.setInt(4, yr_number);
 				 int n=pt.executeUpdate();
 				 System.out.println(n);
 				 
