@@ -11,7 +11,7 @@ public class create_table {
 			 if(conn!=null) {
 				 System.out.println("connection established successful");
 				Statement st=conn.createStatement();				
-				int n=st.executeUpdate("create table movies(mov_name text primary key ,actor text,actress text,year int)");
+				int n=st.executeUpdate("create table movies(m_name text,ac_name text,acs_name text,yr_number int)");
 				System.out.println("table created");
 				 
 			
