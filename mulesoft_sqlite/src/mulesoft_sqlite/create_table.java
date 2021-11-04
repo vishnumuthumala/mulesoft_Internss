@@ -13,12 +13,7 @@ public class create_table {
 				Statement st=conn.createStatement();				
 				int n=st.executeUpdate("create table movies(m_name text,ac_name text,acs_name text,yr_number int)");
 				System.out.println("table created");
-				 
-			
-				
-			 }
-			 else {
-				 System.out.println("not connected");
+				 	
 			 }
 		 }
 		 catch(Exception e) {
